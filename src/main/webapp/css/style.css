@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+* {box-sizing:border-box; font-family: 'Nanum Gothic', sans-serif; color:#000; }
+body{margin:0; font-size:13px;}
+ul,ol{list-style:none; margin:0; padding:0;}
+li{margin:0;padding:0;}
+a{text-decoration: none;}
+
+.dn {display:none;}
+
+/**헤더 영역 S */
+header{ text-align:center; background:#ccc;padding:50px 0;}
+header h1{font-size:40px;margin:0;}
+/**헤더 영역 E */
+
+/**푸터 영역 S */
+footer{text-align: center; background: #f8f8f8; padding:50px 0; border-top:2px solid #000;
+ }
+/**푸터 영역 E */
+
+
+/**작업 등록 영역 S */
+#register{width:800px; margin:0 auto;}
+#register form {display:flex;}
+#register input[type="text"]{flex-grow:1;height:45px;margin:0 5px; border:1px solid #ccc; 
+border-radius:3px;}
+#register .select_status {display:flex; width:250px;}
+#register input[type='radio'] {display:none;}
+#register input[type='radio']+label {width:0; flex-grow:1;height:45px; border:1px solid #000; background:#f8f8f8;
+border-radius:3px;text-align:center; line-hight:43px;cursor:pointer;}
+#register label~label {margin-left:3px;}
+#register input[type='radio']:checked+label{background:#000; color:#fff; }
+#register button {width:180px; background: #000; color:#fff; border-color:#000;cursor:pointer;border-radius:3px;}
+
+/**작업 등록 영역 E */
+
+/**메인 영역 S */
+main{max-width:1100px; min-width:800px; margin:10px auto;}
+/**메인 영역 E */
+
+
+/** 작업목록 - work_list.jsp S */
+#works {display:flex; margin-top:50px;}
+#works > ul {flex-grow:1; width:0; border:1px solid #000;}
+#works .tit{ background: #000; color:#fff; text-align: center; padding:10px; }
+#works ul+ul {margin-left:20px;}
+#works li {padding:10px; cursor:pointer;}
+#works li+li {border-top:1px dashed #000;}
+#works li:nth-of-type(2) {border-top:0;}
+/** 작업목록 - work_list.jsp E */
